@@ -2,7 +2,7 @@
 Example script to login to RSI (https://robertsspaceindustries.com/) aka StarCitizen's website with nodejs
 ## How to Use
 1. Import it like `const login = require('./login')`
-2. Send in your username and password `const result = login(username,password)`
+2. Send in your username and password `const result = await login(username,password)`
 3. Get your token and send the token in your headers as `'x-rsi-token' : result.token` when making requests to rsi that require authentication
 4. Done
 
